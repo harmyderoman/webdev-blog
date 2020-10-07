@@ -3,7 +3,7 @@
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
     <img :src="article.img" :alt="article.alt" />
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <p>Последнее обновление в {{ formatDate(article.updatedAt) }}</p>
     <hr />
 
     <nuxt-content :document="article" />
